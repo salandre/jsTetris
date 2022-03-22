@@ -1,23 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: black;    
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+}
+
 main {
     max-width:500px;
-    margin:auto;
+    margin: 100px auto;
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-top:100px;
 }
 
 #start-button {
-    background-color: orange;
-    border:2px solid orange;
-
-    border-radius: 10px;
+    background-color: rgb(255, 166, 0);
+    border-right: 4px solid rgb(255, 132, 0);  
+    border-bottom: 4px solid rgb(255, 132, 0);
+    border-left: 4px solid rgb(255, 200, 0);
+    border-top: 4px solid rgb(255, 200, 0);   
     margin:15px;
+    padding:10px;
     cursor:pointer;
+    font-weight: bold;
 }
 
 #start-button:hover {
-    border:2px solid orangered;
+    background-color: rgb(255, 200, 0);
 }
 
 .grid {
@@ -30,7 +40,11 @@ main {
 }
 
 .grid div {
-    width:30px;
-    height:30px;
-    outline: 1px dashed lightgray;   
+    width:26px;
+    height:26px;
+    background-color: #333;
+    border-right: 2px solid #111;   
+    border-bottom: 2px solid #111;
+    border-left: 2px solid #555;
+    border-top: 2px solid #555;    
 }
